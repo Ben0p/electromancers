@@ -1,0 +1,21 @@
+@import "electro-theme.scss";
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,700");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Uncial+Antiqua');
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
+
+
+.bg-img
+{
+    background-image: url('/assets/image/welcome-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+
+.body 
+{ 
+    background: #171723;
+    margin: 0; 
+}
