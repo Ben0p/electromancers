@@ -1,0 +1,26 @@
+body { 
+    background: #ffffff;
+    margin: 0;
+}
+
+.toolbar {
+    font-family: 'Electrolize';
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    padding: 0 14px;
+}
+
+.spacer {
+    flex: 1 1 auto;
+  }
+
+.menu-item {
+    font-size: 12px;
+}
+
+.selected-value {
+    margin: 15px 14px;
+  }
