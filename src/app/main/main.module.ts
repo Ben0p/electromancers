@@ -12,18 +12,19 @@ import { ServicesComponent } from './services/services.component';
 import { MainComponent } from './main.component';
 
 
+
 @NgModule({
   imports: [
     CommonModule,
     MainRoutingModule,
-    MaterialModule
+    MaterialModule,
   ],
   declarations: [
     AboutComponent,
     HomeComponent,
     ToolbarComponent,
     ServicesComponent,
-    MainComponent
+    MainComponent,
   ]
 })
 export class MainModule { }

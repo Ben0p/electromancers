@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
+import { NavbarService } from '../nav/nav.service';
 
 @Component({
   selector: 'app-main',
@@ -9,9 +10,13 @@ import { Router } from '@angular/router';
 })
 export class MainComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    public nav: NavbarService
+  ) { }
 
   ngOnInit() {
+    this.nav.show();
     this.router.navigate(['/home', { outlets: { main: ['home'] } }]);
   }
 

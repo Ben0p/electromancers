@@ -19,6 +19,10 @@ const routes: Routes = [
     loadChildren: './main/main.module#MainModule'
   },
   {
+    path: 'gallery',
+    loadChildren: './gallery/gallery.module#GalleryModule'
+  },
+  {
     path: '**',
     redirectTo: 'home'
   },

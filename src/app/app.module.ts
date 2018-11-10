@@ -9,12 +9,16 @@ import { MaterialModule } from './material';
 
 import { WaveLoaderComponent } from './wave-loader/wave-loader.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { NavComponent } from './nav/nav.component';
+
+import { NavbarService } from './nav/nav.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     WaveLoaderComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +26,9 @@ import { WelcomeComponent } from './welcome/welcome.component';
     BrowserAnimationsModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [
+    NavbarService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

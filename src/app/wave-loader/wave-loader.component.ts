@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
+import { NavbarService } from '../nav/nav.service';
 
 
 @Component({
@@ -12,8 +13,7 @@ export class WaveLoaderComponent implements OnInit, AfterViewInit {
 
   loadScripts() {
     const dynamicScripts = [
-      '../assets/externalJS/d3-3.5.17/d3.min.js',
-      '../assets/externalJS/wave-loader.js'
+      'https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'
     ];
     for (let i = 0; i < dynamicScripts.length; i++) {
       const node = document.createElement('script');
@@ -25,11 +25,15 @@ export class WaveLoaderComponent implements OnInit, AfterViewInit {
     }
   }
 
-  constructor(private router: Router) {
+  constructor(
+    private router: Router,
+    public nav: NavbarService
+  ) {
     this.loadScripts();
   }
 
   ngOnInit() {
+    this.nav.hide();
     document.body.classList.add('body');
     document.body.classList.remove('bg-img');
     setTimeout(() => {
