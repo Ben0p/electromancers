@@ -6,18 +6,15 @@ import { AppComponent } from './app.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material';
+
 import { WaveLoaderComponent } from './wave-loader/wave-loader.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WaveLoaderComponent,
-    WelcomeComponent,
-    HomeComponent,
-    AboutComponent
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
     imports: [
@@ -15,7 +16,8 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
         MatIconModule,
         MatMenuModule,
         MatCardModule,
-        MatButtonToggleModule
+        MatButtonToggleModule,
+        MatTabsModule
     ],
     exports: [
         MatButtonModule,
@@ -24,7 +26,8 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
         MatIconModule,
         MatMenuModule,
         MatCardModule,
-        MatButtonToggleModule
+        MatButtonToggleModule,
+        MatTabsModule
     ]
 })
 
